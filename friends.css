@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* nav bar */
+header{
+    position: sticky;
+    top: 0;
+    background: rgb(40, 41, 37);
+    height: 88px;
+}
+
+.navlist{
+    margin-left: 125px;
+    margin-top: -72px;
+}
+html{
+    scroll-behavior: smooth;
+  
+}
+
+.pg img{
+   border: 1px solid red;
+border-radius: 100%;
+margin: 10px 30px;
+}
+
+.navlist ul{
+    display:flex;
+    margin-top: 10px;
+    font-family: 'Baloo Bhai';
+    
+}
+
+.navlist ul li{
+    display: inline;
+    text-align: center;
+    display: block;
+    list-style: none;
+}
+
+.navlist ul li a{
+    font-size: 1.5rem;
+    color: rgb(240, 36, 9);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navlist ul li a:hover{
+    color: rgb(241, 14, 14);
+    background-color: rgb(15, 2, 2);
+}
+
+.navlist ul ul{
+
+   display: inline;
+    display: none;
+    text-align: center;
+}
+
+.navlist ul li:hover >ul{
+      display:block;
+}
+/* Intro */
+.gang{
+    background-color: rgb(43, 200, 248);
+    font-size: 3.1rem;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 3px 3px;
+    
+    cursor: pointer;
+}
+.gang:hover{
+    animation: alternate;
+    transform: scaleX(1.2);
+}
+ .picture img{
+   margin-left: -205px 10px;
+    background-image: url('4friends.jpg') no-repeat;
+    background-color: transparent;
+    padding: 15px;
+   align-content: center;
+    width: 300px;
+    height: 290px;
+    border-radius: 100%;
+    flex-direction:column;
+   
+ }
+
+ 
+ /* .picture .m{
+   margin-top: 325px;
+   float: left;
+ }
+  */
+ .m{
+    background-color: rgb(64, 192, 14);
+    display: inline;
+    padding: 10px 125px;
+    font-size: 1.1rem;
+    font-weight:bold ;
+ 
+    text-align: center;
+ }
+
+ .n{
+    
+    background-color: rgb(16, 159, 241);
+    display: inline;
+    padding: 10px 98px;
+    font-size: 1.1rem;
+    font-weight:bold ;
+  
+ }
+ .t{
+    background-color: rgb(197, 241, 37);
+    display: inline;
+    padding: 10px 125px;
+    font-size: 1.1rem;
+    font-weight:bold ;
+  
+ }
+ .s{  
+    background-color: rgb(212, 0, 0);
+    display: inline;
+    padding: 10px 90px;
+    font-size: 1.1rem;
+    font-weight:bold ;
+    text-align: center;
+  
+ }
+ .points{
+    background-image: url('4friends.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+ }
+
+ .points p{
+    margin: 5px;
+    font-size: 2.1rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+ }
+
+
+ /* Media screen */
+@media screen and (max-width: 480px){    
+    .pg img{
+        width: 44px;
+        height: 34px;
+        border: 1px solid red;
+        border-radius: 100%; 
+        margin: 20px 5px;
+     }
+    .navlist {
+        margin-left: 129px;
+        margin-top: -48px;
+        width: auto;
+    }
+   
+    .navlist ul li ul li{
+        padding: 5px 75px;
+    }
+
+ 
+.navlist ul{
+    width: 17%;
+    list-style: none;
+    margin: -7px -80px;
+   
+   
+ }
+ .navlist li{
+
+            text-align: center;
+            margin-left: 9px;
+            padding: 2px 5px;
+            width: 100%;
+ }
+ .navlist ul li a{
+    padding: 0px 0px;
+    font-size: 0.7rem;
+    color: yellow;
+ }
+ .navlist ul li, .navlist ul li ul{
+    width: 100%;
+
+   
+           text-align: center;
+  
+    
+}
+
+ #menu-button:checked ~ .navlist{
+
+    display:block;
+ }
+    .gang{
+      width: 100%;
+      font-style: oblique;
+     
+        background-color: rgb(43, 200, 248);
+        font-size:1.9rem;
+        text-transform: capitalize;
+        color: white;
+        text-align: center;
+        text-shadow: 1px 3px 3px;
+        
+        cursor: pointer;
+    }
+    .gang:hover{
+      
+        animation: alternate;
+        transform: scaleX(1.001);
+    }
+     .picture img{
+        margin-top: 25px;
+        background-image: url('4friends.jpg') no-repeat;
+        background-color: transparent;
+        padding: 15px;
+       align-content: center;
+        width: 300px;
+        height: 290px;
+        border-radius: 100%;
+        flex-direction: column;
+       
+     }
+     
+     .m{
+        width: 100%;
+        background-color: rgb(64, 192, 14);
+        
+        padding: 10px 125px;
+        font-size: 1.1rem;
+        font-weight:bold ;
+     
+        text-align: center;
+     }
+    
+     .n{margin-top: -500px;
+        background-color: rgb(16, 159, 241);
+        width: 100%;
+        padding: 10px 98px;
+        font-size: 1.1rem;
+        font-weight:bold ;
+      
+     }
+     .t{
+        background-color: rgb(197, 241, 37);
+        width: 100%;
+        padding: 10px 125px;
+        font-size: 1.1rem;
+        font-weight:bold ;
+      
+     }
+     .s{  
+        background-color: rgb(212, 0, 0);
+        width: 100%;
+        padding: 10px 40px;
+        font-size: 1.1rem;
+        font-weight:bold ;
+        text-align: center;
+      
+     }
+     .points{
+        background-image: url('4friends.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 350px;
+     }
+    
+     .points p{
+        
+        margin: 5px;
+        font-size: 1.8rem;
+        color: rgb(255, 255, 255);
+        text-justify: inter-word;
+     }
+    
+    
+    
+    .footer{
+        align-items: center;
+        font-family:Montserrat;
+        font-size: 14px;
+        width: 100%;
+        height: 19px;
+        color: white;
+       background-color: rgb(54, 34, 168);
+       text-align: center;
+         font-weight:normal;
+    
+    }
+}
